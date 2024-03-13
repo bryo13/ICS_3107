@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICS 3107</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="jquery.js"></script>
+    <link type="text/css" href="fish.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <script src="script.js"></script>
+
+
+</head>
+
+<body>
+    <nav>
+        <ul class="members">
+            <li>
+                <h3>ICS 3107</h3>
+            </li>
+            <div class="names">
+                <li> - Kariuki Njiru</li>
+                <li> - Brian Tum</li>
+                <li> - Stephen Masaku</li>
+            </div>
+        </ul>
+    </nav>
+
+    <div class="content">
+
+        <div class="pic">
+            <p><img class="wonder" src="./images/wonders.png" alt="wonders" /></p>
+        </div>
+
+        <div class="explanation">
+            <h4>Background</h4>
+            <p>In 2000 a Swiss foundation launched a drive to determine the New Seven marvels of the World.
+                Given that the original Seven marvels list was collected in the 2nd century BCE —
+                and that only one entrant is still standing( the Pyramids of Giza) — it sounded time for an update.
+                And people around the world supposedly agreed, as further than 100 million votes were cast on the
+                Internet or
+                by text messaging. The final results, which were broadcast in 2007,
+                were met with cheers as well as some hisses — a number of prominent contenders,
+                similar as Athens’s Acropolis, failed to make the cut. <a
+                    href="https://www.britannica.com/topic/Seven-Wonders-of-the-World">*</a>
+            </p>
+
+            <p style="color:#FCF7FF;text-align: center;">The new wonders can be seen below </p>
+            <div id="fisheye" class="fisheye">
+                <div class="fisheyeContainter">
+                    <a href="https://world.new7wonders.com/wonders/pyramid-at-chichen-itza-before-800-a-d-yucatan-peninsula-mexico/"
+                        target="_blank" class="fisheyeItem"><img src="images/Chichen Itza.png" width="50" />Chichen
+                        Itza</a>&nbsp;&nbsp;
+                    <a href="https://world.new7wonders.com/wonders/cristo-redentor-1931-rio-de-janeiro-brazil/"
+                        target="_blank" class="fisheyeItem"><img src="images/Christ the Redeemer.png"
+                            width="50" />Christ the
+                        Reedemer</a>&nbsp;&nbsp;
+                    <a href="https://world.new7wonders.com/wonders/roman-colosseum-70-82-a-d-rome-italy/"
+                        target="_blank" class="fisheyeItem"><img src="images/Colloseum.png"
+                            width="50" />Colloseum</a>&nbsp;&nbsp;
+                    <a href="https://world.new7wonders.com/wonders/great-wall-of-china-220-b-c-and-1368-1644-a-d-china/"
+                        target="_blank" class="fisheyeItem"><img src="images/Great Wall China.png" width="50" />Great
+                        Wall of
+                        China</a>&nbsp;&nbsp;
+                    <a href="https://world.new7wonders.com/wonders/machu-picchu-1460-1470-peru/" target="_blank"
+                        class="fisheyeItem"><img src="images/Machu Pichu.png" width="50" />Machu
+                        Pichu</a>&nbsp;&nbsp;
+                    <a href="https://world.new7wonders.com/wonders/petra-9-b-c-40-a-d-jordan/" target="_blank"
+                        class="fisheyeItem"><img src="images/Petra Jordan.png" width="50" />Petra
+                        Jordan</a>&nbsp;&nbsp;
+                    <a href="https://world.new7wonders.com/wonders/taj-mahal-1630-a-d-agra-india/" target="_blank"
+                        class="fisheyeItem"><img src="images/Taj Mahal.png" width="50" />Taj
+                        Mahal</a>&nbsp;&nbsp;
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+</body>
+<script type="text/javascript">
+    $(document).ready(
+        function () {
+            $('#fisheye').Fisheye(
+                {
+                    maxWidth: 60,
+                    items: 'a',
+                    container: '.fisheyeContainter',
+                    itemWidth: 50,
+                    proximity: 90,
+                    halign: 'center'
+                }
+            )
+
+        }
+    );
+
+</script>
+
+</html>

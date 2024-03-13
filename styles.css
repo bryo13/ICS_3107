@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #A4969B;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+  font-size: large;
+}
+
+a {
+  color: #C4CAD0;
+  text-decoration: none;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  color: #FCF7FF;
+}
+
+.members {
+  list-style: none;
+  padding-left: 2vw;
+  display: flex;
+  flex-wrap: wrap;
+  /* Allows items to wrap on smaller screens */
+}
+
+.members .names {
+  padding-left: 30vw;
+  padding-top: 3vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  font-size: large;
+  letter-spacing: 0cap;
+}
+
+.content {
+  display: flex;
+  padding: 2% 3% 4% 3%;
+}
+
+.explanation {
+  flex: 2;
+}
+
+.pic {
+  flex: 1;
+}
+
+.wonder {
+  max-width: 82%;
+}
+
+
+
+
+.new-wonder {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .members {
+    list-style: none;
+    padding-left: 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    /* Allows items to wrap on smaller screens */
+  }
+  
+  .members .names {
+    padding-left: 30vh;
+    margin-top: -68px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    font-size: large;
+    letter-spacing: 0cap;
+  }
+}
